@@ -1,7 +1,7 @@
 {
   "name": "webpack",
   "version": "1.0.0",
-  "description": "presentation starter using webpack",
+  "description": "presentation webpack",
   "main": "index.js",
   "devDependencies": {
     "clean-webpack-plugin": "^0.1.9",
