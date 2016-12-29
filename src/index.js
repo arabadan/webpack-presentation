@@ -1,20 +1,15 @@
-"use strict";
-
 require("./index.html");
 
 var Reveal = require("reveal.js");
 require("reveal.js/css/reveal.css");
-// uncomment theme you want to load below
-require("reveal.js/css/theme/night.css");
+require("./sky.css");
 
 
 Reveal.initialize({
-history: true,
-// More info https://github.com/hakimel/reveal.js#dependencies
-/* dependencies: [
-  { src: 'plugin/markdown/marked.js' },
-  { src: 'plugin/markdown/markdown.js' },
-  { src: 'plugin/notes/notes.js', async: true },
-  { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-]*/
+	history: true,
+	width: "100%",
+	height: "100%",
+	margin: 0,
+	minScale: 1,
+	maxScale: 1
 });

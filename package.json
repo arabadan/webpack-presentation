@@ -1,31 +1,28 @@
 {
-  "name": "webpack",
-  "version": "1.0.0",
-  "description": "presentation webpack",
-  "main": "index.js",
-  "devDependencies": {
-    "clean-webpack-plugin": "^0.1.9",
-    "css-loader": "^0.23.1",
-    "file-loader": "^0.9.0",
-    "html-loader": "^0.4.3",
-    "path": "^0.12.7",
-    "raw-loader": "^0.5.1",
-    "style-loader": "^0.13.0",
-    "url-loader": "^0.5.5",
-    "webpack": "^1.13.1",
-    "webpack-dev-server": "^1.14.1"
-  },
-  "dependencies": {
-    "lodash": "^4.13.1",
-    "reveal.js": "^3.3.0"
-  },
-  "engines": {
-    "node": ">=5.0"
-  },
-  "scripts": {
-    "serve": "webpack-dev-server --progress --colors",
-    "build": "webpack -p --display-modules --progress --colors"
-  },
-  "author": "",
-  "license": "ISC"
+	"name": "webpack",
+	"version": "1.0.0",
+	"description": "presentation webpack",
+	"author": "",
+	"license": "ISC",
+	"main": "index.js",
+	"devDependencies": {
+		"css-loader": "^0.23.1",
+		"file-loader": "^0.9.0",
+		"html-loader": "^0.4.3",
+		"path": "^0.12.7",
+		"style-loader": "^0.13.0",
+		"url-loader": "^0.5.5",
+		"webpack": "^1.13.1",
+		"webpack-dev-server": "^1.14.1"
+	},
+	"dependencies": {
+		"reveal.js": "^3.3.0"
+	},
+	"engines": {
+		"node": ">=5.0"
+	},
+	"scripts": {
+		"start": "webpack-dev-server",
+		"build": "webpack"
+	}
 }
