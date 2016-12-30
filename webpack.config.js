@@ -1,4 +1,6 @@
 var webpack = require('webpack');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var extractCSS = new ExtractTextPlugin('bundle.css');
 var path = require('path');
 
 var src = path.join(__dirname, 'src');
@@ -7,7 +9,7 @@ module.exports = {
 	context: src,
 	
 	entry: {
-		index: './index.js'
+		app: ['reveal.js/css/reveal.css', './index.js']
 	},
 	output: {
 		path: "dist",
@@ -21,7 +23,7 @@ module.exports = {
 		loaders: [
 			{
 				test: /\.css$/,
-				loaders: ["style", "css"]
+				loaders: extractCSS.extract(["css"])
 			},
 			{
 				test: /\.html$/,
@@ -42,6 +44,7 @@ module.exports = {
 		]
 	},
 	plugins: [
+		extractCSS,
 		new webpack.optimize.UglifyJsPlugin(),
 		new webpack.HotModuleReplacementPlugin()
 	],

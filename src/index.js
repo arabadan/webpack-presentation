@@ -1,9 +1,6 @@
 require("./index.html");
 
 var Reveal = require("reveal.js");
-require("reveal.js/css/reveal.css");
-require("./sky.css");
-
 
 Reveal.initialize({
 	history: true,
