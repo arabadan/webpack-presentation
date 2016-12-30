@@ -2,14 +2,12 @@ var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var extractCSS = new ExtractTextPlugin('bundle.css');
 var path = require('path');
-
 var src = path.join(__dirname, 'src');
 
 module.exports = {
 	context: src,
-	
 	entry: {
-		app: ['reveal.js/css/reveal.css', './index.js']
+		app: ['./css/sky.css', './css/theme.css', './css/fonts.css', './app.js']
 	},
 	output: {
 		path: "dist",
@@ -23,29 +21,19 @@ module.exports = {
 		loaders: [
 			{
 				test: /\.css$/,
-				loaders: extractCSS.extract(["css"])
+				loader: extractCSS.extract("css")
 			},
 			{
-				test: /\.html$/,
-				loader: 'html-loader'
-			},
-			{
-				test: /\.jpg$/,
-				loader: "file-loader"
-			},
-			{
-				test: /\.png$/,
-				loader: "url-loader?mimetype=image/png"
-			},
-			{
-				test: /index\.html/,
-				loader: "file-loader?name=[name].[ext]"
+				test: /\.(png|jpg|gif|woff2?|eot|ttf)$/,
+				loader: 'url'
 			}
 		]
 	},
 	plugins: [
 		extractCSS,
-		new webpack.optimize.UglifyJsPlugin(),
+		new webpack.optimize.UglifyJsPlugin({
+			comment: false
+		}),
 		new webpack.HotModuleReplacementPlugin()
 	],
 	devServer: {

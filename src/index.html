@@ -4,7 +4,8 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
-
+		<link rel="stylesheet" href="bundle.css">
+		
 		<title>WebPack</title>
 	</head>
 	<body class="theme-font-montserrat theme-color-blue-yellow">
@@ -13,11 +14,12 @@
 				<section>
 					<div class="sl-block" data-block-type="text" style="width: 100%; top: 70px; height: auto;">
 						<div class="sl-block-content">
-							<h1><span style="font-size:2.5em">Webpack</span></h1>
+							<h1 style="font-size:2.5em">Webpack</h1>
 						</div>
 					</div>
 					<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 100%; height: 201px; top: 250px;">
-						<div class="sl-block-content" style="z-index: 12; border-width: 1px;" href="" data-inline-svg="false"><img data-natural-width="562" data-natural-height="649" style="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/632126/images/3366371/webpack.svg">
+						<div class="sl-block-content" style="z-index: 12; border-width: 1px;" href="" data-inline-svg="false">
+							<img data-natural-width="562" data-natural-height="649" style="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/632126/images/3366371/webpack.svg">
 						</div>
 					</div>
 					<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 100%; top: 521px;">
@@ -28,7 +30,508 @@
 						</div>
 					</div>
 				</section>
-				<section></section>
+				<section>
+					<div class="sl-block" data-block-type="text" style="width: 100%; top: 113px; height: auto;">
+						<div class="sl-block-content" data-placeholder-text="Title Text" style="z-index: 11;">
+							<h1 style="font-size:2.5em">Pourquoi Webpack ?</h1>
+						</div>
+					</div>
+					<div class="sl-block" data-block-type="text" style="width: 640px; position: relative; margin: auto; text-align: left; top: 275px; height: auto;">
+						<div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+							<ul>
+								<li>Disposer les ressources statiques en modules</li>
+								<li>Intégrer des bibliothèques facilement en tant que modules</li>
+								<li>Séparer le build en plusieurs morceaux</li>
+								<li>Adapté pour les gros projets</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section class="stack">
+					<section style="margin: auto">
+						<div class="sl-block" data-block-type="text" style="width: 100%; top: 113px; height: auto;">
+							<div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+								<h1 style="font-size:2.5em">Task runner</h1>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="text" style="width: 640px; position: relative; margin: auto; text-align: left; top: 275px; height: auto;">
+							<div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+								<ul>
+									<li>Modifier des configurations</li>
+									<li>Définir des étapes de se qu'ils doivent faire et comment le faire</li>
+									<li>Instable</li>
+								</ul>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="image" data-block-id="a73b82e40f99f046b74ce259876554be" style="min-width: 30px; min-height: 30px; width: 180px; height: 180px; left: 310px; top: 449px;">
+							<div class="sl-block-content" style="z-index: 13;">
+								<img data-natural-width="256" data-natural-height="256" style="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/632126/images/3367078/grunt-1.png">
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="image" data-block-id="17b356cbcc583a3742e135b2969f8ad8" style="min-width: 30px; min-height: 30px; width: 78px; height: 175px; left: 544px; top: 451px;">
+							<div class="sl-block-content" style="z-index: 14;">
+								<img style="" data-natural-width="228" data-natural-height="514" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/632126/images/3367079/gulp.png">
+							</div>
+						</div>
+					</section>
+					<section data-id="5eff813890732655716eca3716c1b205">
+						<div class="sl-block" data-block-type="text" style="width: 100%; top: 113px; height: auto;" data-block-id="c9e57daa15f2f09156095662baf23d7f">
+							<div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+								<h1 style="font-size:2.5em">Un exemple</h1>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="code" style="width: 640px; position: relative; margin: auto; text-align: left; height: 100%; top: 237px;" data-block-id="96399f2101a5e37c34aadc627e0d6505">
+							<div class="sl-block-content" style="z-index: 11;" data-highlight-theme="monokai">
+								<pre>
+<code class="hljs php" style="padding: 5px"><span class="hljs-comment">// Concatenate JS Files</span>
+gulp.task(<span class="hljs-string">'scripts'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+	<span class="hljs-keyword">return</span> gulp.src(<span class="hljs-string">'src/js/*.js'</span>)
+	  .pipe(concat(<span class="hljs-string">'main.js'</span>))
+	  .pipe(gulp.dest(<span class="hljs-string">'dist/js'</span>));
+});
+
+<span class="hljs-comment">// Build CSS from SASS</span>
+gulp.task(<span class="hljs-string">'sass'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+	<span class="hljs-keyword">return</span> sass(<span class="hljs-string">'src/scss/style.scss'</span>, {style: <span class="hljs-string">'compressed'</span>})
+		.pipe(rename({suffix: <span class="hljs-string">'.min'</span>}))
+		.pipe(gulp.dest(<span class="hljs-string">'dist/css'</span>));
+});</code>
+								</pre>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="code" style="width: 640px; position: relative; margin: auto; text-align: left; height: 100%; top: 220px;" data-block-id="9706544fe7095b4b73ce0d5e53d2a95d">
+							<div class="sl-block-content" data-highlight-theme="monokai" style="z-index: 12;">
+								<pre class="php">
+<code class="hljs" style="padding: 5px">gulp.task(<span class="hljs-string">'default'</span>, [<span class="hljs-string">'scripts'</span>, <span class="hljs-string">'sass'</span>]);</code>
+								</pre>
+							</div>
+						</div>
+					</section>
+				</section>
+				<section class="stack" data-id="c84346c1a03d59e4abede43a11b286cf">
+					<section data-id="7c5bf35c96bdb970086ccf6d05cdc584">
+						<div class="sl-block" data-block-type="text" style="width: 100%; top: 113px; height: auto;" data-block-id="b98906ec19e67e43583c1679e9f56e43">
+							<div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+								<h1 style="font-size:2.5em">Webpack</h1>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="text" style="width: 410px; position: relative; margin: auto; text-align: left; top: 280px; height: auto;" data-block-id="57ca7549c474a25fe21fb5454259a7c5">
+							<div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+								<ul>
+									<li>N'est pas un task runner</li>
+									<li>Analyse les dépendances</li>
+									<li>Génère des fichiers statiques</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+					<section data-id="8f4d036cbc98e0c7cc62d4bae5ef9303">
+						<div class="sl-block" data-block-type="text" style="width: 100%; top: 113px; height: auto;" data-block-id="259f2bfd69d030fead1a4c1e4778cf14">
+							<div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+								<h1 style="font-size:2.5em">Fonctionnement</h1>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="image" data-block-id="dd8a410edcff61d1ed9488ee56c84ca9" style="min-width: 30px; min-height: 30px; width: 948px; position: relative; margin: auto; text-align: left; height: 474px; top: 210px;">
+							<div class="sl-block-content" style="z-index: 12;"><img data-natural-width="1600" data-natural-height="800" style="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/632126/images/3367088/what-is-webpack.png"></div>
+						</div>
+					</section>
+				</section>
+				<section class="stack" data-id="941cc1b72f9891e5c1de9785b0e5b558">
+					<section data-id="5562bbfec6ade0fa2ce5fee1e8bc8306">
+						<div class="sl-block" data-block-type="text" style="width: 100%; top: 113px; height: auto;" data-block-id="82ea1e1c0b604e528a7082c21dd785f8">
+							<div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+								<h1 style="font-size:2.5em">Principaux concepts</h1>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="text" style="width: 640px; position: relative; margin: auto; text-align: left; top: 280px; height: auto;" data-block-id="f02d0823a238947492216d0b789c5f8e">
+							<div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+								<ul>
+									<li>
+										<span style="font-size:1.2em; font-weight: bold;"><strong>Entry points</strong></span>
+										<ul style="margin-left: 50px">
+											<li>
+												Fichiers d'entrés à charger
+											</li>
+										</ul>
+									</li>
+									<li>
+										<strong><span style="font-size:1.2em; font-weight: bold;">Loaders</span></strong>
+										<ul style="margin-left: 50px">
+											<li>Injection de comportements supplémentaires (autre que du JS)</li>
+										</ul>
+									</li>
+									<li>
+										<span style="font-size:1.2em; font-weight: bold;"><strong>Plugins</strong></span>
+										<ul style="margin-left: 50px">
+											<li>S'injecte dans le processus de construction</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+					<section data-id="b3cc920da048016aa9edc8003f2bdc76">
+						<div class="sl-block" data-block-type="text" style="width: 100%; top: 113px; height: auto;" data-block-id="d5ed4a8c0e9bd0023a61966333ac2d83">
+							<div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+								<h1 style="font-size:2.5em">Configuration</h1>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="text" style="width: 640px; left: 160px; top: 232px; height: auto;" data-block-id="6fafb805e73b39da3a9639f2a524dfec">
+							<div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+								<p>Ligne de commande</p>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="code" data-block-id="fb30e61b44daedbe3ee0332f2849998f" style="min-width: 30px; min-height: 30px; width: 500px; height: 30px; left: 229px; top: 280px;">
+							<div class="sl-block-content" data-highlight-theme="zenburn" style="z-index: 13;">
+								<pre class="none"><code>&gt; webpack &lt;entry&gt; [&lt;entry&gt;] &lt;output&gt;</code></pre>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="text" style="width: 400px; left: 280px; top: 369px; height: auto;" data-block-id="f77f643827c2eb71fa32bc6f71fdd380">
+							<div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+								<p style="text-align:center">Fichier de configuration webpack.config.js</p>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="code" data-block-id="3e081d6730cebbf7f8084aebae467dd4" style="min-width: 30px; min-height: 30px; width: 500px; height: 71px; left: 230px; top: 455px;">
+							<div class="sl-block-content" data-highlight-theme="obsidian" style="z-index: 15;">
+								<pre class="none"><code>module.exports = {
+    // configuration
+};</code></pre>
+							</div>
+						</div>
+					</section>
+					<section data-id="a45452ef614a4de7b68fe48a0ac80fdb">
+						<div class="sl-block" data-block-type="text" style="width: 100%; top: 43px; height: auto;" data-block-id="0c755679f03086d028bc219c486331b4">
+							<div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+								<h1 style="font-size:2.5em">Exemple</h1>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="code" data-block-id="403224b1d18952ea86baf8a2907bbed1" style="min-width: 30px; min-height: 30px; width: 589px; height: 511px; left: 347px; top: 165px;">
+							<div class="sl-block-content" data-highlight-theme="obsidian" style="z-index: 12; font-size: 65%;">
+								<pre class="none"><code>var webpack = require('webpack');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var extractCSS = new ExtractTextPlugin('bundle.css');
+var path = require('path');
+var src = path.join(__dirname, 'src');
+
+module.exports = {
+    context: src,
+    entry: {
+	app: ['./css/sky.css', './css/theme.css', './css/fonts.css', './index.js']
+    },
+    output: {
+	path: "dist",
+	filename: "bundle.js",
+	publicPath: "/"
+    },
+    resolve: {
+        modulesDirectories: ['./node_modules']
+    },
+    module: {
+	loaders: [
+	    {
+	        test: /\.css$/,
+		loader: extractCSS.extract("css")
+	    },
+            {
+                test: /\.(png|jpg|gif|woff2?|eot|ttf)$/,
+                loader: 'url'
+            }
+	    {
+		test: /\.html$/,
+		loader: "html-loader"
+	    }
+	]
+    },
+    plugins: [
+        extractCSS,
+	new webpack.optimize.UglifyJsPlugin({
+            comment: false
+        }),
+	new webpack.HotModuleReplacementPlugin()
+    ]
+};</code></pre>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="code" data-block-id="959a584926b85874f3e1088a02e9bfe4" style="min-width: 30px; min-height: 30px; width: 214px; height: 300px; left: 61px; top: 200px;">
+							<div class="sl-block-content" data-highlight-theme="obsidian" style="z-index: 13;">
+								<pre class="none"><code>img architecture</code></pre>
+							</div>
+						</div>
+					</section>
+				</section>
+				<section class="stack" data-id="4b525c32d81425b58770323d6d35866a">
+					<section data-id="c35ede0355e10f03da9f68dbe41e3d24">
+						<div class="sl-block" data-block-type="text" style="width: 100%; top: 39px; height: auto;" data-block-id="24cb474b2aa8e0ed3a4de8682e13e0b4">
+							<div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+								<h1 style="font-size:2.5em">Web + Pack</h1>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 286px; height: 31px; left: 624px; top: 180px;" data-block-id="ab1ad6259de9b13bfa68ee2acc900f74">
+							<div class="sl-block-content" data-highlight-theme="obsidian" style="z-index: 11;">
+								<pre class="none"><code>module.exports = "It works !";</code></pre>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 345px; height: 135px; left: 604px; top: 458px;" data-block-id="88a8d925221aad8cd9a4e7808cad4fe5">
+							<div class="sl-block-content" data-highlight-theme="obsidian" style="z-index: 12;">
+								<pre class="none"><code>var Reveal = require("reveal.js");
+var chaine = require("./chaine.js");
+require("reveal.js/css/reveal.css");
+
+Reveal.initialize({...});
+console.log(chaine);</code></pre>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="image" data-block-id="c8e761d29788265acd0487968d393e3c" style="min-width: 30px; min-height: 30px; width: 92px; height: 106px; left: 434px; top: 476px;">
+							<div class="sl-block-content" style="z-index: 13;" data-inline-svg="false"><img data-natural-width="562" data-natural-height="649" style="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/632126/images/3366371/webpack.svg"></div>
+						</div>
+						<div class="sl-block" data-block-type="text" data-block-id="0a1a21d4727f2db10c33346cc4054432" style="height: auto; min-width: 30px; min-height: 30px; width: 160px; left: 687px; top: 135px;">
+							<div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; border-width: 3px; border-color: rgb(0, 0, 0); background-color: rgb(170, 170, 170); color: rgb(0, 0, 0); border-style: solid;">
+								<p><span style="font-size:1.0em">chaine.js</span></p>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 160px; left: 687px; top: 413px;" data-block-id="d74a83ce5fd061dc29f074c6b9c7fcec">
+							<div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; border-width: 3px; border-color: rgb(0, 0, 0); background-color: rgb(170, 170, 170); color: rgb(0, 0, 0); border-style: solid;">
+								<p><span style="font-size:1.0em">app.js</span></p>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 160px; left: 800px; top: 240px;" data-block-id="30a8cf162a12184412f419a214b41456">
+							<div class="sl-block-style" style="z-index: 16;">
+								<div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; border-width: 3px; border-color: rgb(0, 0, 0); background-color: rgb(170, 170, 170); color: rgb(0, 0, 0); border-style: solid;">
+									<p><span style="font-size:1.0em">reveal.js</span></p>
+								</div>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 160px; left: 147px; top: 173px;" data-block-id="891a423c9ca2cce0cdd2f8b1b5fe2ff0">
+							<div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17; border-width: 3px; border-color: rgb(0, 0, 0); background-color: rgb(170, 170, 170); color: rgb(0, 0, 0); border-style: solid;">
+								<p><span style="font-size:1.0em">sky.css</span></p>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 160px; left: 31px; top: 240px;" data-block-id="c5ededdccbdd0b5d0592590471617b36">
+							<div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18; border-width: 3px; border-color: rgb(0, 0, 0); background-color: rgb(170, 170, 170); color: rgb(0, 0, 0); border-style: solid;">
+								<p><span style="font-size:1.0em">theme.css</span></p>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 160px; left: 265px; top: 240px;" data-block-id="3099bdb0d406799281d6d699037a5855">
+							<div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 19; border-width: 3px; border-color: rgb(0, 0, 0); background-color: rgb(170, 170, 170); color: rgb(0, 0, 0); border-style: solid;">
+								<p><span style="font-size:1.0em">fonts.css</span></p>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 227px; top: 439px;" data-block-id="a1e058cd7abde2ce2cb96f403680904d">
+							<div class="sl-block-content" data-line-x1="198" data-line-y1="194" data-line-x2="11" data-line-y2="104" data-line-color="#000000" data-line-start-type="line-arrow" data-line-end-type="none" style="z-index: 20;" data-line-width="7px" data-line-style="solid">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="187" height="90" viewbox="11 104 187 90">
+									<line stroke="rgba(0,0,0,0)" stroke-width="15" x1="193.5" y1="192.5" x2="11.5" y2="104.5"></line>
+									<line stroke="#000000" stroke-width="7" x1="193.5" y1="192.5" x2="11.5" y2="104.5"></line>
+									<path style="fill: rgba(0,0,0,0);" stroke="#000000" stroke-width="7" transform="translate(193,192) rotate(-64.299)" d="M -15.75 -15.75 L 0 0 L 15.75 -15.75"></path>
+								</svg>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 226px; top: 237px;" data-block-id="687ef8fea655111d1039764e1d2f84f5">
+							<div class="sl-block-content" data-line-x1="12" data-line-y1="304" data-line-x2="11" data-line-y2="122" data-line-color="#000000" data-line-start-type="line-arrow" data-line-end-type="none" style="z-index: 21;" data-line-width="7px" data-line-style="solid">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="1" height="182" viewbox="11 122 1 182">
+									<line stroke="rgba(0,0,0,0)" stroke-width="15" x1="12.5" y1="299.5" x2="11.5" y2="122.5"></line>
+									<line stroke="#000000" stroke-width="7" x1="12.5" y1="299.5" x2="11.5" y2="122.5"></line>
+									<path style="fill: rgba(0,0,0,0);" stroke="#000000" stroke-width="7" transform="translate(12,299) rotate(-0.315)" d="M -15.75 -15.75 L 0 0 L 15.75 -15.75"></path>
+								</svg>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 240px; top: 301px;" data-block-id="bdedcf28031d2c4ac576bf361a202101">
+							<div class="sl-block-content" data-line-x1="-94" data-line-y1="248" data-line-x2="11" data-line-y2="122" data-line-color="#000000" data-line-start-type="line-arrow" data-line-end-type="none" style="z-index: 22;" data-line-width="7px" data-line-style="solid">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="105" height="126" viewbox="-94 122 105 126">
+									<line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-90.5" y1="244.5" x2="11.5" y2="122.5"></line>
+									<line stroke="#000000" stroke-width="7" x1="-90.5" y1="244.5" x2="11.5" y2="122.5"></line>
+									<path style="fill: rgba(0,0,0,0);" stroke="#000000" stroke-width="7" transform="translate(-91,244) rotate(39.806)" d="M -15.75 -15.75 L 0 0 L 15.75 -15.75"></path>
+								</svg>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 110px; top: 300px;" data-block-id="a6699f94d353c872bb2a9b8f93feea22">
+							<div class="sl-block-content" data-line-x1="114" data-line-y1="249" data-line-x2="11" data-line-y2="122" data-line-color="#000000" data-line-start-type="line-arrow" data-line-end-type="none" style="z-index: 23;" data-line-width="7px" data-line-style="solid">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="103" height="127" viewbox="11 122 103 127">
+									<line stroke="rgba(0,0,0,0)" stroke-width="15" x1="111.5" y1="245.5" x2="11.5" y2="122.5"></line>
+									<line stroke="#000000" stroke-width="7" x1="111.5" y1="245.5" x2="11.5" y2="122.5"></line>
+									<path style="fill: rgba(0,0,0,0);" stroke="#000000" stroke-width="7" transform="translate(111,245) rotate(-39.043)" d="M -15.75 -15.75 L 0 0 L 15.75 -15.75"></path>
+								</svg>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 510px; top: 582px;" data-block-id="608040d74c33e4d16afd37cbe9a0c249">
+							<div class="sl-block-content" data-line-x1="61" data-line-y1="170" data-line-x2="11" data-line-y2="122" data-line-color="#000000" data-line-start-type="line-arrow" data-line-end-type="none" style="z-index: 24;" data-line-width="7px" data-line-style="solid">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="50" height="48" viewbox="11 122 50 48">
+									<line stroke="rgba(0,0,0,0)" stroke-width="15" x1="57.5" y1="166.5" x2="11.5" y2="122.5"></line>
+									<line stroke="#000000" stroke-width="7" x1="57.5" y1="166.5" x2="11.5" y2="122.5"></line>
+									<path style="fill: rgba(0,0,0,0);" stroke="#000000" stroke-width="7" transform="translate(57,166) rotate(-46.169)" d="M -15.75 -15.75 L 0 0 L 15.75 -15.75"></path>
+								</svg>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 400px; top: 582px;" data-block-id="d3bffdcbfff6273fdd4fc839811df01d">
+							<div class="sl-block-content" data-line-x1="-45" data-line-y1="170" data-line-x2="11" data-line-y2="122" data-line-color="#000000" data-line-start-type="line-arrow" data-line-end-type="none" style="z-index: 25;" data-line-width="7px" data-line-style="solid">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="56" height="48" viewbox="-45 122 56 48">
+									<line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-40.5" y1="167.5" x2="11.5" y2="122.5"></line>
+									<line stroke="#000000" stroke-width="7" x1="-40.5" y1="167.5" x2="11.5" y2="122.5"></line>
+									<path style="fill: rgba(0,0,0,0);" stroke="#000000" stroke-width="7" transform="translate(-41,167) rotate(49.399)" d="M -15.75 -15.75 L 0 0 L 15.75 -15.75"></path>
+								</svg>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 160px; left: 296px; top: 639px;" data-block-id="a169c1dabe751bd58daaac806b87e6f8">
+							<div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 26; border-width: 3px; border-color: rgb(255, 255, 255); background-color: rgb(106, 168, 79); color: rgb(255, 255, 255); border-style: solid;">
+								<p>bundle.css</p>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 160px; left: 510px; top: 639px;" data-block-id="872f6a68b66a532d4bdecc35cfd9eb11">
+							<div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 27; border-width: 3px; border-color: rgb(255, 255, 255); background-color: rgb(106, 168, 79); color: rgb(255, 255, 255); border-style: solid;">
+								<p>bundle.js</p>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 160px; left: 576px; top: 240px;" data-block-id="26e77159ed010cd2e7b843d8e52a363d">
+							<div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 28; border-width: 3px; border-color: rgb(0, 0, 0); background-color: rgb(170, 170, 170); color: rgb(0, 0, 0); border-style: solid;">
+								<p><span style="font-size:1.0em">reveal.css</span></p>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 767px; top: 237px;" data-block-id="eb55616970c10d7fa36f44e7f0253f08">
+							<div class="sl-block-content" data-line-x1="-213" data-line-y1="262" data-line-x2="-213" data-line-y2="110" data-line-color="#000000" data-line-start-type="line-arrow" data-line-end-type="none" style="z-index: 29;" data-line-width="7px">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="1" height="152" viewbox="-213 110 1 152">
+									<line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-212.5" y1="257.5" x2="-212.5" y2="110.5"></line>
+									<line stroke="#000000" stroke-width="7" x1="-212.5" y1="257.5" x2="-212.5" y2="110.5"></line>
+									<path style="fill: rgba(0,0,0,0);" stroke="#000000" stroke-width="7" transform="translate(-213,257) rotate(0)" d="M -15.75 -15.75 L 0 0 L 15.75 -15.75"></path>
+								</svg>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 535px; top: 529px;" data-block-id="d769e3a7760b37f9518c7a93c5e3f418">
+							<div class="sl-block-content" data-line-x1="-268" data-line-y1="434" data-line-x2="-213" data-line-y2="434" data-line-color="#000000" data-line-start-type="line-arrow" data-line-end-type="none" style="z-index: 30;" data-line-width="7px">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="55" height="1" viewbox="-268 434 55 1">
+									<line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-262.5" y1="434.5" x2="-212.5" y2="434.5"></line>
+									<line stroke="#000000" stroke-width="7" x1="-262.5" y1="434.5" x2="-212.5" y2="434.5"></line>
+									<path style="fill: rgba(0,0,0,0);" stroke="#000000" stroke-width="7" transform="translate(-263,434) rotate(90)" d="M -15.75 -15.75 L 0 0 L 15.75 -15.75"></path>
+								</svg>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 656px; top: 300px;" data-block-id="6d0e448539f374cde8bc6883fa154bd3">
+							<div class="sl-block-content" data-line-x1="-238" data-line-y1="254" data-line-x2="-339" data-line-y2="158" data-line-color="#000000" data-line-start-type="line-arrow" data-line-end-type="none" style="z-index: 31;" data-line-width="7px">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="101" height="96" viewbox="-339 158 101 96">
+									<line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-241.5" y1="250.5" x2="-338.5" y2="158.5"></line>
+									<line stroke="#000000" stroke-width="7" x1="-241.5" y1="250.5" x2="-338.5" y2="158.5"></line>
+									<path style="fill: rgba(0,0,0,0);" stroke="#000000" stroke-width="7" transform="translate(-242,250) rotate(-46.454)" d="M -15.75 -15.75 L 0 0 L 15.75 -15.75"></path>
+								</svg>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 777px; top: 301px;" data-block-id="88ec34e5dcc884e738c02f5034759b9c">
+							<div class="sl-block-content" data-line-x1="-442" data-line-y1="252" data-line-x2="-339" data-line-y2="157" data-line-color="#000000" data-line-start-type="line-arrow" data-line-end-type="none" style="z-index: 33;" data-line-width="7px">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="103" height="95" viewbox="-442 157 103 95">
+									<line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-437.5" y1="248.5" x2="-338.5" y2="157.5"></line>
+									<line stroke="#000000" stroke-width="7" x1="-437.5" y1="248.5" x2="-338.5" y2="157.5"></line>
+									<path style="fill: rgba(0,0,0,0);" stroke="#000000" stroke-width="7" transform="translate(-438,248) rotate(47.314)" d="M -15.75 -15.75 L 0 0 L 15.75 -15.75"></path>
+								</svg>
+							</div>
+						</div>
+					</section>
+					<section data-id="b6dfab110f01e7235304e4e5858f34d7">
+						<div class="sl-block" data-block-type="code" data-block-id="866236b1038c836e5b56128458010c8c" style="min-width: 30px; min-height: 30px; width: 599px; height: 300px; left: 181px; top: 260px;">
+							<div class="sl-block-content" data-highlight-theme="solarized-dark" style="z-index: 12;">
+								<pre class="xml"><code>&lt;!doctype html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        
+        &lt;link rel="stylesheet" href="bundle.css"&gt;
+	&lt;title&gt;WebPack&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body class="theme-font-montserrat theme-color-blue-yellow"&gt;
+	&lt;div class="reveal"&gt;
+            ...
+	&lt;/div&gt;
+	&lt;script src="bundle.js"&gt;&lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+							</div>
+						</div>
+						<div class="sl-block" data-block-type="text" style="width: 100%; top: 113px; height: auto;" data-block-id="c261165f0eaea5d0cfa3857621e4fea9">
+							<div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 13;">
+								<h1 style="font-size:2.5em">Utilisations des packs</h1>
+							</div>
+						</div>
+					</section>
+				</section>
+				<section data-id="dcb26f8197f68bd85048e91794661c47">
+					<div class="sl-block" data-block-type="text" style="width: 100%; top: 113px; height: auto;" data-block-id="b6beb3d459d4cbfb3ef9625d39c646c6">
+						<div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+							<h1 style="font-size:2.5em">Dépendances</h1>
+						</div>
+					</div>
+					<div class="sl-block" data-block-type="text" style="width: 669px; position: relative; margin: auto; text-align: left; top: 296px; height: auto;" data-block-id="3474085faad3941c761cd37691ea28d1">
+						<div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui">
+							<ul>
+								<li>
+									Fonctionne très bien avec des modules NPM
+									<ul>
+										<li>Installation du module</li>
+										<li>Utiliser le module dans l'application</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="sl-block" data-block-type="code" data-block-id="3db61af384dd27b642c18bcd22ee2794" style="min-width: 30px; min-height: 30px; width: 261px; height: 30px; left: 579px; top: 350px;">
+						<div class="sl-block-content" data-highlight-theme="obsidian" style="z-index: 13;">
+							<pre class="none"><code>&gt; npm install --save reveal</code></pre>
+						</div>
+					</div>
+					<div class="sl-block" data-block-type="code" data-block-id="0258c7a6377470392ecf7605563b13d5" style="min-width: 30px; min-height: 30px; width: 341px; height: 107px; left: 219px; top: 428px;">
+						<div class="sl-block-content" data-highlight-theme="obsidian" style="z-index: 14;">
+							<pre class="none"><code>var Reveal = require("reveal.js");
+
+Reveal.initialize({
+    ...
+});</code></pre>
+						</div>
+					</div>
+					<div class="sl-block" data-block-type="text" style="width: 669px; position: relative; margin: auto; text-align: left; top: 547px; height: auto;" data-block-id="f08b66878c77fcf147005793cfb6838b">
+						<div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;" dir="ui">
+							<ul>
+								<li>Intégration facile avec Bower</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section data-id="d2de76cf120cd42cc9653e95b708c908">
+					<div class="sl-block" data-block-type="text" style="width: 100%; top: 113px; height: auto;" data-block-id="37f5970e35f889f0969b05ece358c1be">
+						<div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+							<h1 style="font-size:2.5em">Webpack server</h1>
+						</div>
+					</div>
+					<div class="sl-block" data-block-type="code" data-block-id="16a9532bc713cb8583e4e98a47ec3c52" style="min-width: 30px; min-height: 30px; width: 217px; height: 130px; left: 372px; top: 498px;">
+						<div class="sl-block-content" data-highlight-theme="obsidian" style="z-index: 12;">
+							<pre class="none"><code>devServer: {
+    contentBase: src,
+    hot: true,
+    progress: true,
+    colors: true
+}</code></pre>
+						</div>
+					</div>
+					<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 328px; height: 30px; left: 575px; top: 311px;" data-block-id="1cf25005163d7d28bc5dd40f19773810">
+						<div class="sl-block-content" data-highlight-theme="obsidian" style="z-index: 13;">
+							<pre class="none"><code>&gt; npm install -g webpack-dev-server</code></pre>
+						</div>
+					</div>
+					<div class="sl-block" data-block-type="text" data-block-id="ce3d1c41b74aa8e78fc5d2bccc53f3c7" style="height: auto; min-width: 30px; min-height: 30px; width: 420px; left: 110px; top: 267px;">
+						<div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+							<ul>
+								<li>Chargement à chaud</li>
+								<li>Chargement en mémoire des fichiers build</li>
+							</ul>
+						</div>
+					</div>
+					<div class="sl-block" data-block-type="text" data-block-id="80560384259bb2158fbf27693e1f8680" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 451px;">
+						<div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;">
+							<p>webpack.config.js</p>
+						</div>
+					</div>
+				</section>
+				<section data-id="205ccc3480d2087f2d04cc8f079ac978">
+					<div class="sl-block" data-block-type="text" style="width: 100%; top: 302px; height: auto;" data-block-id="e4fd94acef1f473320ad83ee831fdbbc">
+						<div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+							<h1 style="font-size:2.5em">Des questions ?</h1>
+						</div>
+					</div>
+				</section>
 			</div>
 		</div>
 		<script src="bundle.js"></script>

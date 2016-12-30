@@ -1,6 +1,6 @@
-require("./index.html");
-
 var Reveal = require("reveal.js");
+var chaine = require("./chaine.js");
+require("reveal.js/css/reveal.css");
 
 Reveal.initialize({
 	history: true,
@@ -10,3 +10,5 @@ Reveal.initialize({
 	minScale: 1,
 	maxScale: 1
 });
+
+console.log(chaine);
