@@ -14,18 +14,11 @@ module.exports = {
 		filename: "bundle.js",
 		publicPath: "/"
 	},
-	resolve: {
-		modulesDirectories: ['./node_modules']
-	},
 	module: {
 		loaders: [
 			{
 				test: /\.css$/,
 				loader: extractCSS.extract("css")
-			},
-			{
-				test: /\.(png|jpg|gif|woff2?|eot|ttf)$/,
-				loader: 'url'
 			}
 		]
 	},
@@ -39,6 +32,7 @@ module.exports = {
 	devServer: {
 		contentBase: src,
 		hot: true,
+		inline: true,
 		progress: true,
 		colors: true
 	}
